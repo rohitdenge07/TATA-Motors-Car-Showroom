@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> /* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+section.order {
+    padding: 60px 20px;
+    background: #fff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.order .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Form layout */
+form {
+    background: #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box {
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputBox span {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.inputBox input,
+.inputBox textarea,
+.inputBox select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: 0.3s ease-in-out;
+}
+
+.inputBox input:focus,
+.inputBox textarea:focus,
+.inputBox select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Custom select box override */
+.inputBox select {
+    width: 100%;
+}
+
+/* Submit Button */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto 0;
+    padding: 14px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+    <section class=" header border border-dark rounded" style="background-color: black; height: 90px; align-items: center;">
+
+
+        <img style="height:50px; width: 180px; margin-left: 60px; margin-top: 15px;" src="images\srs logo1.jpg">
+
+       <nav class=" ">
+        
+
+           <h1 style="text-align: center; color: white; margin-top: -45px; font-size: xx-large;">Testdrive</h1>
+
+       </nav>
+
+   </section>
+   <br>
+
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="margin-left: 80px;" class="d-block w-100 rounded border border-dark" src="images\2021-Tata-Safari-interior.jpg" alt="First slide">
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <section class="order" id="order">
+        <h1 class="heading">Book Your Ride</h1>
+
+        <form action="">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="inputBox">
+                        <span>Name</span>
+                        <input class="border border-dark rounded" type="text" placeholder="enter your name">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>E-mail</span>
+                        <input class="border border-dark rounded" type="text" placeholder="E-Mail">
+                    </div>
+
+                  
+
+                    <div class="inputBox">
+                        <span>Address</span>
+                        <textarea class="border border-dark rounded" name="" placeholder="Enter Your Address" cols="5" rows="5"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <div class="inputBox">
+                        <span>phone number</span>
+                        <input class="border border-dark rounded" type="number" placeholder="enter your phone number">
+                    </div>
+
+
+                    <div class="inputBox ">
+                        <span>Book Your Slot</span>
+                        <input class="border border-dark rounded" type="datetime-local">
+                    </div>
+
+
+
+
+                   <div class="inputBox">
+                    <span>Car Model:</span>
+                    <select name="car names" id="cars" style="height: 50px; width: 600px; margin-top: 10px;">
+                        <option value="rigatoni">Harrier</option>
+                      <option value="dave">Safari</option>
+                      <option value="pumpernickel">Punch</option>
+                      <option value="reeses">Altroz</option>
+                      <option value="reeses">Tigor</option>
+                      <option value="reeses">Tiago</option>
+                      <option value="reeses">Nexon</option>
+                    </select>
+                   </div>
+
+                  
+
+                </div>
+
+            </div>
+
+
+
+
+          
+
+            
+             <input type="submit" value="book now" class="btn">
+        </form>
+
+    </section>
+
+
+    
+</body>
+</html>
+
+
+
+<!-- footer -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  .footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.footer-column {
+  max-width: 250px;
+  margin: 20px;
+}
+
+.footer-column .icon {
+  background-color: #1e1e1e;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-column .icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.footer-column h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.footer-column p, 
+.footer-column a {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #2e2e2e;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #444;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 16px;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+      <h3>Address</h3>
+      <p>SRS Motors<br>Near Sajai Gardan<br>Airport Ground, Phaltan, Maharashtra 415523</p>
+    </div>
+
+    <div class="footer-column">
+      <div class="icon"><i class="fas fa-phone"></i></div>
+      <h3>Phone</h3>
+      <p>Call 1800 209 8282</p>
+    </div>
+
+    <div class="footer-column">
+      <div class="icon"><i class="fas fa-envelope"></i></div>
+      <h3>Email</h3>
+      <p>Srsmotors@Gmail.Com</p>
+    </div>
+
+    <div class="footer-column">
+      <div class="icon"><i class="fas fa-clock"></i></div>
+      <h3>Opening Showroom</h3>
+      <p>WhatsApp -9876543210<br>Assistance Available Between 9AM-9PM</p>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+
+  <div class="footer-bottom">
+    Developed By <strong>ROHIT DENGE</strong> | All Right Reserved!
+  </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</body>
+</html>

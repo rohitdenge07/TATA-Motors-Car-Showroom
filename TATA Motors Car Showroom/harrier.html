@@ -1,0 +1,241 @@
+<!DOCTYPE >
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');body{width: 100%;height: 100%;margin: 0;padding: 0;text-align: center;font-family: 'Roboto', sans-serif}
+
+    .single_product{
+        padding-top: 66px;  
+        padding-bottom: 140px; 
+        background-color: #e5e5e5; 
+        margin-top: 0px;  
+        padding: 17px}
+
+
+    .product_image_side{background-color: #fff}
+    .product_description{padding:15px}
+    .product_name{font-size: 22px} 
+     input{display: none}
+
+    .button{
+        display: inline-block;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer
+
+      }
+
+    .button span{
+
+
+              display: block;position: 
+                absolute;
+                width: 50px;
+                height:50px;padding: 0;top: 50%;left: 50%; 
+                  -webkit-transform: translate(-50%, -50%); 
+                  -ms-transform: translate(-50%, -50%); 
+                  -o-transform: translate(-50%, -50%); 
+                  transform: translate(-50%, -50%); 
+                  border-radius: 100%; 
+                  background: #eeeeee; 
+                  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);  
+                  transition: ease .3s
+
+
+              }
+
+    .button span:hover{padding: 10px}
+
+    .red .button span{background:red;  border-style: solid;}  
+    .silver 
+     .button span{background: white;  border-style: solid;}
+      .grey .button span{background: grey; border-style: solid;}
+    .blue .button span{background: blue; border-style: solid;}
+     .layer{
+
+          display: block;position: absolute; 
+           width: 100%;height: 100%;top: 0;left: 0;   
+           background: transparent;z-index: -1}
+           #bar{width: 30%;background-color: black;margin:auto} 
+           #progress{width: 1%;height: 30px;background-color: #fcec03; 
+            line-height: 30px;text-align: center 
+
+
+        }
+
+
+      .pro{
+        padding-top: 66px;  
+        padding-bottom: 140px; 
+        background-color: white; 
+        margin-top: 0px;  
+        padding: 17px;
+        margin-bottom: 59px;
+        }
+  
+
+
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+	
+
+
+
+
+
+function display() {
+
+var images = {  
+silver: {
+img: "https://img.gaadicdn.com/images/car-images/930x620/Tata/Harrier/9098/1655537013855/226_Orcus-White_d9d9d9.jpg",
+description: "TATA Harrier White ",
+price: "18L TO 25L ₹",
+reviews:"3255 reviews",
+emi:"5,222",
+color:"Star Dust",
+transmission:"MANUAL/AUTOMATIC",
+alloy_wheel:"Yes"
+},
+grey: {
+img: "https://img.gaadicdn.com/images/car-images/930x620/Tata/Harrier/9098/1660811663512/227_Daytona-Grey_3a3b3f.jpg",
+description: "TATA Harrier Grey",
+price: "18L TO 25L",
+reviews:"3155 reviews",
+emi:"5,422",
+color:"daytona grey",
+transmission:"MANUAL/AUTOMATIC",
+alloy_wheel:"Yes"
+
+},
+red:{
+img: "https://img.gaadicdn.com/images/car-images/930x620/Tata/Harrier/9098/1655537013855/225_Calypso-Red_a71113.jpg",
+description: "TATA Harrier RED",
+price: "18L to 25L ₹",
+reviews:"2390 reviews",
+emi:"5,822",
+color:"Red",
+transmission:"MANUAL/AUTOMATIC",
+alloy_wheel:"Yes"
+},
+
+blue: {
+img: "https://img.gaadicdn.com/images/car-images/930x620/Tata/Harrier/9098/1655537013855/221_royale-blue_242e63.jpg",
+description: "TATA Harrier Blue",
+price: "18L-25L",
+reviews:"2300 reviews",
+emi:"5,022",
+color:"Royal Blue",
+transmission:"MANUAL/AUTOMATIC",
+alloy_wheel:"YES"
+}
+
+};
+
+for (i = 0; i < 4; i++) { if (document.colorpicker.color[i].checked==true) 
+	{ var checkNumber=document.colorpicker.color[i]; document.stage.src=images[checkNumber.value].img; $("#description").innerHTML=images[checkNumber.value].description; $(".product_price").html(images[checkNumber.value].price); $(".product_name").html(images[checkNumber.value].description); $(".rating-review").html(images[checkNumber.value].reviews); $(".emi_starts").html(images[checkNumber.value].emi); $(".car_color").html(images[checkNumber.value].color); $(".car_transmission").html(images[checkNumber.value].transmission); $(".car_alloy").html(images[checkNumber.value].alloy_wheel); } } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div class="single_product  ">
+    <div class="container-fluid " >
+        <div class="product_image_side border border-dark  rounded">
+            <div class="row" >
+                <div class="col-md-5"> <img src="https://img.gaadicdn.com/images/car-images/930x620/Tata/Harrier/9098/1655537013855/226_Orcus-White_d9d9d9.jpg" name="stage" width="500" height="500" />
+                    <form name="colorpicker"> <label class="silver"> <input type="radio" name="color" value="silver" onClick="display(this.form)">
+                            <div class="layer"></div>
+                            <div class="button"> <span></span> </div>
+                        </label> <label class="grey"> <input type="radio" name="color" value="grey" onClick="display(this.form)">
+                            <div class="layer"></div>
+                            <div class="button"> <span></span> </div>
+                        </label> <label class="red"> <input type="radio" name="color" value="red" onClick="display(this.form)">
+                            <div class="layer"></div>
+                            <div class="button"> <span></span> </div>
+                        </label> <label class="blue"> <input type="radio" name="color" value="blue" onClick="display(this.form)">
+                            <div class="layer"></div>
+                            <div class="button"> <span></span> </div>
+                        </label>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="product_description text-left" style="margin-left: 90px;">
+                        <div class="product_name text-uppercase">Tata Harrier</div>
+                        <div class="product-rating mt-1"><span class="badge badge-success"><i class="fa fa-star"></i> 4.5 Star</span> <span class="rating-review">3455 Reviews</span></div>
+                        <div class="mt-2">Price starts from - ₹<span class="product_price">Rs.15 - 24.07 Lakh</span> </div>
+                        <div> <span class="product_saved">EMI starts: </span> <span class="emi_starts">9,222</span> </div>
+                        <div class="mt-1"><a href="ClicktoDrive.html"> <button class="btn btn-sm btn-outline-info">Brochure</button></a> <A href="Finance.html"><button class="btn btn-sm btn-outline-danger">Get Finance offers</button> </A></div>
+                        <hr class="singleline">
+                        <div>Color - <span class="car_color">RED</span></div>
+                        <div>Service cost - <span class="car_service">2665/yr</span></div>
+                        <div> Seats - <span class="car_seats">5 seats</span></div>
+                        <div> Transmission - <span class="car_transmission">MANUAL/AUTOMATIC
+                        
+                        </span></div>
+                        <div>Engine - <span class="car_engine">1197 cc</span></div>
+                        <div> BHP - <span class="car_bhp">81.86</span></div>
+                        <div>Power Steering - <span class="car_steering">Yes</span></div>
+                        <div> Alloy Wheels - <span class="car_alloy">Yes</span></div>
+                        <div> Airbag - <span class="car_airbag">Yes</span></div>
+                        <div>
+                            <div class="col-xs-6 mt-5"> <a href="Booking.html"><button type="button" class="btn btn-primary shop-button">book Now</button></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+</body>
+</html>
